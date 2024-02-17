@@ -1,0 +1,43 @@
+.border-r {
+    border-radius: 8px;
+    /* border: 2px solid red; */
+    /* margin: 3px; */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-centre {
+    align-items: center;
+}
+
+.bg-gray {
+    background-color: #121212;
+}
+
+.fotn-f {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.bg-gray2 {
+    background-color: #181818;
+}
+
+.no-style-type {
+    list-style-type: none;
+}
+
+.width-last {
+    width: 20%;
+}
