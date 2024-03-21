@@ -3,93 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Web Player : Music</title>
+    <title>Spotify - Web Player: Music for</title>
     <link rel="icon" type="image" href="images/spotify.png">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/utility.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/98cfca11fd.js" crossorigin="anonymous"></script>
+    <style>
+        
+        @media (max-width: 992px) {
+            .card {
+                width: 22vw;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 30vw;
+            }
+        }
+
+        @media(max-width: 576px) {
+            .card {
+                width: 45vw;
+            }
+        }
+    </style>
+    <script>
+        function funOpen(){
+          window.location.href="signup.html";
+        }
+      </script>
 </head>
 <body class="bg-black fontf">
     <div class="parent flex" style="justify-content: space-between;">
-        <div class="left bg-gray" style="width: 20vw;">
-            <div class="home bg-gray2 border-r">
+        <div class="left bg-black" style="width: 22vw;">
+            <div class="home bg-gray border-r">
                 <ul class="list-unstyled">
-                    <li><i class="fa-brands fa-spotify"></i> Spotify</li>
-                    <li><i class="fa-sharp fa-solid fa-house"></i>Home</li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                    <li class="ic"><i class="fa-brands fa-spotify"></i><h6 class="lu-l1">Spotify</h6></li>
+                    <li class="ic"><i class="fa-sharp fa-solid fa-house"></i> <h6 class="lu-lc">Home</h6></li>
+                    <a href="search.html" style="text-decoration: none; color: gray;"><li class="ic ics"><i class="fa-solid fa-magnifying-glass"></i> <h6 class="lu-lc">Search</h6></li></a>
                 </ul>
             </div>
-            <div class="library bg-gray2 border-r">
+            <div class="library bg-gray border-r" style="width: 22vw;">
                 <div class="libs">
-                    <img src="images/collection.png" type="png" alt="library" width="25px">
-                    <label for="library"> Library</label>
+                    <div class="lib-img"><img src="images/collection.png" type="png" alt="library" width="25px">
+                    <label for="library"><h6>Your Library</h6></label></div>
+                    <i class="fa-solid fa-plus"></i>
                 </div>
                 <div class="cyfp">
-                    <div class="div1">
+                    <div class="div1 divbt">
                         <h6>Create your first playlist</h6>
                         <p>It's easy, we'll help you</p>
                         <button>Create playlist</button>
                     </div>
-                    <div class="div2">
-                        <h4>Let's find some podecasts to <br>follow</h4>
+                    <div class="div2 divbt">
+                        <h6>Let's find some podecasts to <br>follow</h6>
                         <p>We'll keep you updated on new <br>episodes</p>
                         <button>Browse podecasts</button>
                     </div>
                 </div>
                 <div class="legal">
-                    <pre class="lsp"><a href="">Legal</a>    <a href="">Safty & Privacy Center</a>
-<a href="">Privacy Policy</a>    <a href="">Cookies</a>   <a href="">About ads</a>
+                    <pre class="lsp"><a href="">Legal</a>  <a href="">Safty & Privacy Center</a>
+<a href="">Privacy Policy</a>  <a href="">Cookies</a>  <a href="">About ads</a>
 <a href="">Accessibility</a>
-                        <h6>Cookies</h6>
+<a href=""><b style="font-size: 13px;">Cookies</b></a>
                     </pre>
                 </div>
                 <div class="lng">
-                    <button><img src="https://cdn.hugeicons.com/icons/globe-02-stroke-rounded.svg" alt="globe-02" width="24" height="24" /> English</button>
+                    <button class="lng-button"><img src="https://cdn.hugeicons.com/icons/globe-02-stroke-rounded.svg" alt="globe-02" width="18" height="18" /> <b>English</b></button>
                 </div>
             </div>
         </div>
         <div class="right">
             <div style="position: relative;">
-                <div class="heading">
+                <div class="heading bg-gray">
                     <div class="pageswitch">
                         <button class="page"><i class="fa-solid fa-chevron-left"></i></button>
                         <button class="page"><i class="fa-solid fa-chevron-right"></i></button>
                     </div>
                     <div class="logsign">
-                        <button class="signup"><b>Sign up</b></button>
+                        <button class="signup" onclick="funOpen()"><b>Sign up</b></button>
                         <button class="login"><b>Log in</b></button>
                     </div>
                 </div>
             </div>
+            <!-- <div class="nothing"></div> -->
             <div class="playlist" style="background-color: #222222;">
-                <h2>Spotify Playlist</h2>
-                <div class="cardlist">
-                    <div class="card" style="width: 14rem; background-color: #181818;">
+                <div class="sp">
+                    <h4>Spotify Playlist</h4>
+                    <a href="#"> <b>Show all</b></a>
+                </div>
+                <div class="cardlist row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-ld-r g-4">
+                    <div class="card col" style="width: 12rem; background-color: #181818; border-radius: 5%;">
                         <img class="card-img-top mt-2" src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="Card image cap">
                         <div class="card-body bg-gray2">
-                            <h5 class="card-text">lofi beats</h5>
+                            <h6>lofi beats</h6>
                             <p class="card-text">chill beats, lofi vibes, new<br>tracks every week...</p>
                         </div>
                     </div>
-                    <div class="card bg-gray2" style="width: 14rem; background-color: #181818;">
+                    <div class="card bg-gray2 col" style="width: 12rem; background-color: #181818;">
                         <img class="card-img-top mt-2" src="https://i.scdn.co/image/ab67706f00000002cef8ac8b3a702dfba2ae85a9" alt="Card image cap">
                         <div class="card-body">
-                            <h5>Today's Top Hits</h5>
+                            <h6>Today's Top Hits</h6>
                             <p class="card-text">Dua Lipa is on top of the<br>Hottest 50!</p>
                         </div>
                     </div>
-                    <div class="card bg-gray2" style="width: 14rem; background-color: #181818;">
+                    <div class="card bg-gray2 col" style="width: 12rem; background-color: #181818;">
                         <img class="card-img-top mt-2" src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d" alt="Card image cap">
                         <div class="card-body">
-                            <h5>Chillout Lounge</h5>
+                            <h6>Chillout Lounge</h6>
                             <p class="card-text">Just lean back and enjoy<br>relaxed beats</p>
                         </div>
                     </div>
-                    <div class="card bg-gray2" style="width: 14rem; background-color: #181818;">
+                    <div class="card bg-gray2 col" style="width: 12rem; background-color: #181818;">
                         <img class="card-img-top mt-2" src="https://i.scdn.co/image/ab67706f00000002d771dc645afe9b87978b1d3e" alt="Card image cap">
                         <div class="card-body">
-                            <h5>All Out 2020s</h5>
+                            <h6>All Out 2020s</h6>
                             <p class="card-text">The biggest songs of the<br>2020s</p>
                         </div>
                     </div>
@@ -97,31 +127,30 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <div class="ccu">
-                    <div class="company width-last">
-                        <h4>Company</h4>
+                <div class="ccu row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <div class="company width-lst col">
+                        <h6>Company</h6>
                         <a href="">About</a><br>
                         <a href="">Jobs</a><br>
                         <a href="">For the Record</a>
                     </div>
-                    <div class="communities  width-last">
-                        <h4>Communities</h4>
+                    <div class="communities  width-lst col">
+                        <h6>Communities</h6>
                         <a href="">For Artists</a><br>
                         <a href="">Developers</a><br>
                         <a href="">Advertising</a><br>
                         <a href="">Investors</a><br>
                         <a href="">Vendors</a>
                     </div>
-                    <div class="usefullinks  width-last">
-                        <h4>Useful links</h4>
+                    <div class="usefullinks  width-lst col">
+                        <h6>Useful links</h6>
                         <a href="">Vendors</a><br>
                         <a href="">Free Mobile App</a>
                     </div>
-                    <div class="fxi  width-last ">
-                        <button> <i class="fa-brands fa-instagram"></i></button>
-                        <button> <i class="fa-brands fa-twitter"></i></button>
-                        <button> <i class="fa-brands fa-facebook"></i></button>
+                    <div class="fxi  width-lst col">
+                        <button class="fxi-b"> <i class="fa-brands fa-instagram"></i></button>
+                        <button class="fxi-b"> <i class="fa-brands fa-twitter"></i></button>
+                        <button class="fxi-b"> <i class="fa-brands fa-facebook"></i></button>
                     </div>
                 </div>
                 <hr style="width: 95%; margin-left: 2.5%;">
@@ -134,6 +163,17 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footfull">
+            <div class="pss">
+                <b><p class="posy">Preview of Spotify</p></b>
+                <p>Sign up to get unlimited songs and podecasts with occasional ads. No credit card needed.</p>
+            </div>
+            <div>
+                <button class="sufb" onclick="funOpen()">Sign up free</button>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

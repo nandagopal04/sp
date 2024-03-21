@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Search</title>
+    <link rel="icon" type="image" href="images/spotify.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="https://kit.fontawesome.com/98cfca11fd.js" crossorigin="anonymous"></script>
+    <script>
+      function funOpen(){
+        window.location.href="signup.html";
+      }
+    </script>
+</head>
+<body class="bg-black fontf">
+    <div class="parent flex" style="justify-content: space-around;">
+    <div class="left">
+        <div class="left bg-black" style="width: 88.5%;">
+            <div class="home bg-gray border-r">
+                <ul class="list-unstyled">
+                    <li class="ic"><i class="fa-brands fa-spotify"></i><h6 class="lu-l1">Spotify</h6></li>
+                    <a href="home.html" style="text-decoration: none; color: gray;"><li class="ic"><i class="fa-sharp fa-solid fa-house"></i> <h6 class="lu-lc">Home</h6></li></a>
+                    <li class="ic ics" style="color: #fff;"><i class="fa-solid fa-magnifying-glass"></i> <h6 class="lu-lc">Search</h6></li>
+                </ul>
+            </div>
+            <div class="library bg-gray border-r" style="width: 22vw;">
+                <div class="libs" style="filter: invert(50%);">
+                    <div class="lib-img"><img src="images/collection.png" type="png" alt="library" width="25px">
+                    <label for="library"><h6>Your Library</h6></label></div>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="cyfp">
+                    <div class="div1 divbt">
+                        <h6>Create your first playlist</h6>
+                        <p>It's easy, we'll help you</p>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="div2 divbt">
+                        <h6>Let's find some podecasts to <br>follow</h6>
+                        <p>We'll keep you updated on new <br>episodes</p>
+                        <button>Browse podecasts</button>
+                    </div>
+                </div>
+                <div class="legal">
+                    <pre class="lsp"><a href="">Legal</a>  <a href="">Safty & Privacy Center</a>
+<a href="">Privacy Policy</a>  <a href="">Cookies</a>  <a href="">About ads</a>
+<a href="">Accessibility</a>
+<a href=""><b style="font-size: 13px;">Cookies</b></a>
+                    </pre>
+                </div>
+                <div class="lng">
+                    <button class="lng-button"><img src="https://cdn.hugeicons.com/icons/globe-02-stroke-rounded.svg" alt="globe-02" width="18" height="18" /> <b>English</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right bg-gray" style="background-color: #00000080; width: 100%;">
+      <div>
+        <div class="heading bg-gray" style="width: 100%;">
+            <div class="pageswitch">
+                <button class="page"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="page"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="logsign">
+                <button class="signup" onclick="funOpen()"><b>Sign up</b></button>
+                <button class="login"><b>Log in</b></button>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray2">
+        <h1>browse all</h1>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+          <div class="col">
+            <div class="card h-100" style="background-color:  rgb(0, 100, 80);">
+              <div class="card-ti"><h5 class="card-title">Podcaste</h5></div><br><br>
+              <div class="card-body card-img">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                <!-- <h1>🙌❤🙌</h1> -->
+                <img src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgb(132, 0, 231);">
+              <div class="card-ti"><h5 class="card-title">Live Event</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgb(30, 50, 100);">
+              <div class="card-ti"><h5 class="card-title">Made For You</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: pink;">
+              <div class="card-ti"><h5 class="card-title">New Releases</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgb(220, 20, 140);">
+              <div class="card-ti"><h5 class="card-title">Hindi</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caff5976b97bcf10d98acbae2cd" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:red;">
+              <div class="card-ti"><h5 class="card-title">Punjabi</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67706f00000002461fda205f5f952eff8bae70" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: yellow;">
+              <div class="card-ti"><h5 class="card-title">Tamil</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf4b3beede484da74b233fa299" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: blue;">
+              <div class="card-ti"><h5 class="card-title">Telugu</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf666a4ae3e6161da7a120ca14" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:  rgb(105, 2, 2);">
+              <div class="card-ti"><h5 class="card-title">Pop</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: orange;">
+              <div class="card-ti"><h5 class="card-title">Love</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://t.scdn.co/images/209c867f5bb34076b0dcc9deeb1868e6" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: hotpink;">
+              <div class="card-ti"><h5 class="card-title">Sad</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/9af79fd06e34dea3cd27c4e1cd6ec7343ce20af4" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: pink;">
+              <div class="card-ti"><h5 class="card-title">Happy</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/e227cd9674618024276c65f1213fb05af34cf512" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: yellowgreen;">
+              <div class="card-ti"><h5 class="card-title">Heart Breke</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:gold;">
+              <div class="card-ti"><h5 class="card-title">Trending</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafbca4d84993408c24bec78de8" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: blueviolet";>
+              <div class="card-ti"><h5 class="card-title">Party</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafa862ab80dd85682b37c4e768" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:fuchsia;">
+              <div class="card-ti"><h5 class="card-title">Mood</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafa1a252e3a815b65778d8c2aa" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rebeccapurple;">
+              <div class="card-ti"><h5 class="card-title">Devotional</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafb03c6f8e7efca2ae36f41b31" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:indianred;">
+              <div class="card-ti"><h5 class="card-title">Decades</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:khaki;">
+              <div class="card-ti"><h5 class="card-title">Hip-Hop</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf0123a7f6f0e031c49e243389" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: pink;">
+              <div class="card-ti"><h5 class="card-title">Dance</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://t.scdn.co/images/ad3e3f8f80eb494d998a435f7a5ae8c7" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgb(220, 20, 140);">
+              <div class="card-ti"><h5 class="card-title">Student</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafdad1281e13697e8d8cf8f347" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:lawngreen;">
+              <div class="card-ti"><h5 class="card-title">chill</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf9e3dea60be755ccd97b7351f" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: lightblue;">
+              <div class="card-ti"><h5 class="card-title">Gaming</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafdfdaac1cf9574a196ca25196" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:lightcoral;">
+              <div class="card-ti"><h5 class="card-title">K-Pop</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf013ee3c983e6f60bf28bad5a" alt="">
+                <!-- <p class="card-text">dd</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:  rgb(1, 77, 77);">
+              <div class="card-ti"><h5 class="card-title">Workout</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67706f000000029249b35f23fb596b6f006a15" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgb(1, 101, 101);">
+              <div class="card-ti"><h5 class="card-title">Rock</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafae7e69beb88f16969641b53e" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: slategray;">
+              <div class="card-ti"><h5 class="card-title">Sleep</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafae7e69beb88f16969641b53e" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: pink;">
+              <div class="card-ti"><h5 class="card-title">Instrumental</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67706f000000028ed1a5002b96c2ea882541b2" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: sandybrown;">
+              <div class="card-ti"><h5 class="card-title">At Home</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafe914a07d20cec7a65e2e5dad" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:seagreen;">
+              <div class="card-ti"><h5 class="card-title">Country</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafc0d2222b4c6441930e1a386e" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: aquamarine;">
+              <div class="card-ti"><h5 class="card-title">mentel</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafefa737b67ec51ec989f5a51d" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: aqua;">
+              <div class="card-ti"><h5 class="card-title">focus</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67706f00000002e4eadd417a05b2546e866934" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:  slateblue;">
+              <div class="card-ti"><h5 class="card-title">Soul</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafd82e2c83fe100a89e9cbb2a2" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: silver;">
+              <div class="card-ti"><h5 class="card-title">Kids & Family</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf8a04560a209b3f32165ea8a2" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: darkorange;">
+              <div class="card-ti"><h5 class="card-title">Anime</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67706f00000002c19c5f13f8b3ff2d73ff00bc" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: darkolivegreen;">
+              <div class="card-ti"><h5 class="card-title">Punk</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafb2cdd7a95b0a5444aa15cfb5" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:darkmagenta;">
+              <div class="card-ti"><h5 class="card-title">Blues</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caff22ac5cab318d550b593ffac" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:red;">
+              <div class="card-ti"><h5 class="card-title">Wellness</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf8dec632effd9735fa8aba06e" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: darkkhaki;">
+              <div class="card-ti"><h5 class="card-title">Travel</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf4b36a2c31432ace68d90c4f2" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: darkgray;">
+              <div class="card-ti"><h5 class="card-title">summer</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf097a46192e6bb67e52cdff60" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:  darkgoldenrod;">
+              <div class="card-ti"><h5 class="card-title">Netflix</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf4546867d66e63e828683d872" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: rgb(132, 0, 231);">
+              <div class="card-ti"><h5 class="card-title">glow</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf50cfe3fbd3a9fb8810da45ea" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: darkcyan;">
+              <div class="card-ti"><h5 class="card-title">latin</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafa59f90c077c9f618fd0dde30" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: pink;">
+              <div class="card-ti"><h5 class="card-title">Music + Talk</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf3e87a8609ad96dd14c5e1ef3" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: darkblue;">
+              <div class="card-ti"><h5 class="card-title">hot</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caff4e38be86ca48a3b10884ae3" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color:hotpink;">
+              <div class="card-ti"><h5 class="card-title">Songwriters</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005cafb973ab1288f74f333e7e2e22" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: goldenrod;">
+              <div class="card-ti"><h5 class="card-title">Classic</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf43752ff9764492b8e2a5bf54" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100" style="background-color: grey;">
+              <div class="card-ti"><h5 class="card-title">Month</h5></div><br><br>
+              <div class="card-body card-img">
+                <img src="https://i.scdn.co/image/ab67fb8200005caf43752ff9764492b8e2a5bf54" alt="">
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  end of row -->
+        </div>
+    </div>
+</div>
+<footer>
+  <div class="footfull">
+      <div class="pss">
+          <b><p class="posy">Preview of Spotify</p></b>
+          <p>Sign up to get unlimited songs and podecasts with occasional ads. No credit card needed.</p>
+      </div>
+      <div>
+          <button class="sufb" onclick="funOpen()">Sign up free</button>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
